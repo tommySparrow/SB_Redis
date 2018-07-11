@@ -20,6 +20,7 @@ public class MyRedisServer {
     public  void  setSth(){
         ValueOperations<Object, Object> opsForValue = redisTemplate.opsForValue();
         opsForValue.set("aa", "123");
+        System.out.println(opsForValue.get("aa"));
     }
 
 
